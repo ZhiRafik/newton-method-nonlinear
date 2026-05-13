@@ -62,7 +62,7 @@ class NewtonSolver(
         )
     }
 
-    fun solve(start: Vector2D, maxIter: Int = 30, eps: Double = 1e-8): NewtonResult {
+    fun solve(start: Vector2D, maxIter: Int = 30, eps: Double = 1e-6): NewtonResult {
         if (!insideArea(start)) {
             return NewtonResult(
                 null,
